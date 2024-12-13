@@ -8,6 +8,7 @@ let round = 1;
 let playerPattern = [];
 let computerPattern = [];
 let msg = "";
+let highScore = 0;
 
 /*------------------------ Cached Element References ------------------------*/
 const messageEl = document.querySelector("#message");
@@ -17,7 +18,10 @@ const buttons = document.querySelectorAll(".game-button");
 
 const flashButton = (choice) => {
   const button = document.getElementById(choice);
+  const tone = document.getElementById(`${choice}-audio`);
   button.classList.add("active");
+  tone.volume = 0.5;
+  tone.play();
   setTimeout(() => {
     button.classList.remove("active");
   }, 500);
@@ -45,11 +49,22 @@ const nextRound = () => {
   flashPattern();
 };
 
+const checkHighScore = () => {
+  if (round - 1 > highScore) {
+    highScoreEl.innerText = `Highest Round: ${round - 1}`;
+    highScore = round;
+  }
+};
+
 const comparePatterns = () => {
   const currentChoice = playerPattern.length - 1;
 
   if (playerPattern[currentChoice] !== computerPattern[currentChoice]) {
-    msg = `Oops wrong color! Your final score: ${round}`;
+    const wrongTone = document.getElementById("wrong-audio");
+    wrongTone.volume = 0.01;
+    wrongTone.play();
+    msg = `Oops wrong color! Your final score: ${round - 1}`;
+    checkHighScore();
     render();
     return false;
   }

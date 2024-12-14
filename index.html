@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/js/app.js" defer></script>
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Simon Says</title>
+    <title>Simon</title>
   </head>
   <body>
     <header>
-      <h1>Simon Says</h1>
-      <p>
-        <ul>
-          <li>Watch and listen as the buttons light up and make sounds</li>
-            <li>Press the buttons in the same order to advance to the next round </li>
-            <li>The number of buttons to press increases with each round </li>
-            <li>Be careful not to hit the wrong color!</li>
-        </ul>
-      </p>
+      <h1>
+        <span id="color1">S</span>
+        <span id="color2">i</span>
+        <span id="color3">m</span>
+        <span id="color4">o</span>
+        <span id="color5">n</span>
+      </h1>
+      <ul>
+        <li>Watch and listen as the buttons light up and make sounds.</li>
+        <li>
+          Press the buttons in the same order to advance to the next round.
+        </li>
+        <li>The number of buttons to press increases with each round.</li>
+        <li>Be careful not to hit the wrong color!</li>
+      </ul>
     </header>
-    <h2 id="message">Press play to start!</h2>
+    <h2 id="message">Press Play to Start!</h2>
     <div class="board">
       <button class="game-button" id="red"></button>
       <button class="game-button" id="green"></button>
       <button class="game-button" id="blue"></button>
       <button class="game-button" id="yellow"></button>
     </div>
-    <button id="reset-button">Play / Try Again</button>
-    <h2 id="high-score">Highest Round: </h2>
+    <button id="reset-button">
+      <span id="color1">P</span>
+        <span id="color2">l</span>
+        <span id="color3">a</span>
+        <span id="color4">y</span>
+    </button>
+    <h2 id="high-score">Highest Round:</h2>
     <audio id="red-audio" src="Tones/red-tone.mp3"></audio>
     <audio id="green-audio" src="Tones/green-tone.mp3"></audio>
     <audio id="blue-audio" src="Tones/blue-tone.mp3"></audio>
@@ -35,6 +46,3 @@
     <audio id="wrong-audio" src="Tones/wrong-buzzer.mp3"></audio>
   </body>
 </html>
-
-
-

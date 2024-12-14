@@ -1,24 +1,63 @@
+@font-face {
+  font-family: titleText;
+  src: url(../fonts/PORKYS_.TTF);
+}
+
+@font-face {
+  font-family: bodyText;
+  src: url(../fonts/AlteHaasGroteskRegular.ttf);
+}
+
 body {
-  /* margin: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background: linear-gradient(grey, darkgray );
+  font-family: bodyText;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -80px;
+}
+
+h1 {
+  font-family: titleText;
+  font-size: 100px;
+}
+
+#color1{
+  color: red ;
+}
+#color2{
+  color: green ;
+}
+#color3{
+  color: blue;
+}
+#color4{
+  color: yellow;
+}
+#color5{
+  color: red;
 }
 
 ul {
   list-style-type: none;
+  margin-top: -50px;
 }
 
 li {
   margin: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 .board {
@@ -64,4 +103,11 @@ li {
 #reset-button {
   margin-top: 50px;
   cursor: pointer;
+  width: 150px;
+  height: 100px;
+  background-color: transparent;
+  font-size: 40px;
+  border: 0;
+  font-family: titleText;
 }
+

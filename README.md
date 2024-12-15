@@ -8,7 +8,7 @@ Simon is a memory based game where you must watch and listen as buttons light up
 
 ## Getting started
 
-link to game
+[link to game](https://jameseyboy615.github.io/Simon-Says/)
 
 [Planning Materials](https://trello.com/invite/b/675785a378d05fc8ed5759ab/ATTI1d627a03314b542b82906ba758659c53BCFF2BE3/simon-says)
 
@@ -35,5 +35,7 @@ CSS
 - Colorblind Mode - No color
 
 - UI improvements
+
+- Audio improvements
 
 

@@ -112,7 +112,7 @@ h2 {
   font-family: titleText;
 }
 
-@media (min-width: 480px)  {
+@media (max-width: 480px)  {
 
   .board {
     border-radius: 5%;

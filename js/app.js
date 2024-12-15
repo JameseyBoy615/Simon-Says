@@ -20,7 +20,7 @@ const flashButton = (choice) => {
   const button = document.getElementById(choice);
   const tone = document.getElementById(`${choice}-audio`);
   button.classList.add("active");
-  tone.volume = 0.5;
+  tone.volume = 1;
   tone.play();
   setTimeout(() => {
     button.classList.remove("active");

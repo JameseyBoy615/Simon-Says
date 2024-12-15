@@ -105,6 +105,12 @@ buttons.forEach((button) => {
 
 document.querySelector("#reset-button").addEventListener("click", reset);
 
+
+
+
+// <-------------------------- GraveYard ------------------------------> 
+
+
 //one way to add logic?????
 // 1.create a loop that runs through computerPattern Array
 // 2.change css of buttons for player to mimic

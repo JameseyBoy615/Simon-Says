@@ -11,3 +11,29 @@ Simon is a memory based game where you must watch and listen as buttons light up
 link to game
 
 [Planning Materials](https://trello.com/invite/b/675785a378d05fc8ed5759ab/ATTI1d627a03314b542b82906ba758659c53BCFF2BE3/simon-says)
+
+## Attributions
+
+[Dafont](https://www.dafont.com/) - Fonts used
+
+[pbxbook](https://pbxbook.com/other/dtmftone.html) - Game sounds
+
+[pixabay](https://pixabay.com/sound-effects/) - Game sounds
+
+## Technologies Used
+
+JavaScript
+
+html
+
+CSS
+
+## Road Map
+
+- Hard Difficulty - Faster patterns
+
+- Colorblind Mode - No color
+
+- UI improvements
+
+

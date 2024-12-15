@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(grey, darkgray );
+  background: linear-gradient(grey, silver);
   font-family: bodyText;
 }
 
@@ -29,19 +29,19 @@ h1 {
   font-size: 100px;
 }
 
-#color1{
-  color: red ;
+#color1 {
+  color: red;
 }
-#color2{
-  color: green ;
+#color2 {
+  color: green;
 }
-#color3{
+#color3 {
   color: blue;
 }
-#color4{
+#color4 {
   color: yellow;
 }
-#color5{
+#color5 {
   color: red;
 }
 
@@ -58,6 +58,7 @@ li {
 
 h2 {
   font-size: 40px;
+  text-align: center;
 }
 
 .board {
@@ -111,3 +112,11 @@ h2 {
   font-family: titleText;
 }
 
+@media (min-width: 480px)  {
+
+  .board {
+    border-radius: 5%;
+    padding: 10px
+  }
+
+}

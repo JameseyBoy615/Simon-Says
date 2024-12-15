@@ -15,6 +15,7 @@ body {
   align-items: center;
   background: linear-gradient(grey, silver);
   font-family: bodyText;
+  text-align: center;
 }
 
 header {
@@ -129,6 +130,11 @@ h2 {
 
   li {
     font-size: 20px;
+  }
+
+  #reset-button {
+    font-size: 25px;
+    margin-top: 0px;
   }
 
   .board {

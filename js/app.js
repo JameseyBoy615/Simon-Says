@@ -61,7 +61,7 @@ const comparePatterns = () => {
 
   if (playerPattern[currentChoice] !== computerPattern[currentChoice]) {
     const wrongTone = document.getElementById("wrong-audio");
-    wrongTone.volume = 0.01;
+    wrongTone.volume = 0.005;
     wrongTone.play();
     msg = `Oops wrong color! Your final score: ${round - 1}`;
     checkHighScore();

@@ -27,6 +27,7 @@ header {
 h1 {
   font-family: titleText;
   font-size: 100px;
+  text-align: center;
 }
 
 #color1 {
@@ -112,11 +113,26 @@ h2 {
   font-family: titleText;
 }
 
-@media (max-width: 480px)  {
+@media (max-width: 480px) {
+  h1 {
+    font-size: 60px;
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  ul {
+    margin-top: 1px;
+  }
+
+  li {
+    font-size: 20px;
+  }
 
   .board {
     border-radius: 5%;
-    padding: 10px
+    padding: 10px;
   }
-
 }

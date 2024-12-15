@@ -43,7 +43,7 @@ const getComputerPattern = () => {
 const nextRound = () => {
   playerPattern = [];
   round += 1;
-  msg = `round: ${round}`;
+  msg = `Round: ${round}`;
   render();
   getComputerPattern();
   flashPattern();

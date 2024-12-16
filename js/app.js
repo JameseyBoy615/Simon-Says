@@ -23,16 +23,32 @@ const flashButton = (choice) => {
   tone.volume = 1;
   tone.currentTime = 0;
   tone.play();
-  setTimeout(() => {
-    button.classList.remove("active");
-  }, 500);
+  if (round >= 10) {
+    setTimeout(() => {
+      button.classList.remove("active");
+    }, 300);
+  } else {
+    setTimeout(() => {
+      button.classList.remove("active");
+    }, 500);
+  }
 };
 
 const flashPattern = () => {
   computerPattern.forEach((choice, index) => {
-    setTimeout(() => {
-      flashButton(choice);
-    }, 800 * index);
+    if (round >= 10) {
+      setTimeout(() => {
+        flashButton(choice);
+      }, 400 * index);
+    } else if (round >= 5) {
+      setTimeout(() => {
+        flashButton(choice);
+      }, 600 * index);
+    } else {
+      setTimeout(() => {
+        flashButton(choice);
+      }, 800 * index);
+    }
   });
 };
 

@@ -21,6 +21,7 @@ const flashButton = (choice) => {
   const tone = document.getElementById(`${choice}-audio`);
   button.classList.add("active");
   tone.volume = 1;
+  tone.currentTime = 0;
   tone.play();
   setTimeout(() => {
     button.classList.remove("active");
@@ -105,11 +106,7 @@ buttons.forEach((button) => {
 
 document.querySelector("#reset-button").addEventListener("click", reset);
 
-
-
-
-// <-------------------------- GraveYard ------------------------------> 
-
+// <-------------------------- GraveYard ------------------------------>
 
 //one way to add logic?????
 // 1.create a loop that runs through computerPattern Array
